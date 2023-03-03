@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags: []
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Joueur
+  - Arme
+  - Ennemi
+  - Coin
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Sol
+    uniqueID: 1514117215
+    locked: 0
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Mur
+    uniqueID: 364598233
+    locked: 0
+  - name: Ciel
+    uniqueID: 3586527665
+    locked: 0
