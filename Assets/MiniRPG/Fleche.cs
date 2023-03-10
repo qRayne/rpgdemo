@@ -12,6 +12,8 @@ public class Fleche : MonoBehaviour
     {
         rig = GetComponent<Rigidbody2D>();
         rig.velocity = new Vector2(1.0f, 0.0f) * vitesse;
+
+        Debug.DrawRay(transform.position, Vector3.right * 10.0f,Color.red);
     }
 
     //OnCollision pour des objets durs qui se cognent

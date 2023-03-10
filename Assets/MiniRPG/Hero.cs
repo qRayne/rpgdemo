@@ -16,10 +16,15 @@ public class Hero : MonoBehaviour
     [SerializeField]
     private Transform prefabFleche;
 
+
+    [SerializeField]
+    private Transform cible;
+
     void Start()
     {
         rig = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+   
     }
 
     void Update()
@@ -35,6 +40,18 @@ public class Hero : MonoBehaviour
         }
 
         detruire = Input.GetButton("Fire1");
+
+        // Pour avoir un vecteur entre une cible et une source, effecture l'équation vectorielle suivante ;
+        // direction = cible - source
+
+        Vector3 direction = cible.position - transform.position;
+        Vector3 directionNormalise = direction.normalized;
+
+
+        // dessine une ligne entre le point de depart et le point d'arrivee en coordonnée global
+        //Debug.DrawLine(transform.position, transform.position + directionNormalise, Color.cyan);
+        // raccourci è la ligne précédente
+        Debug.DrawRay(transform.position, directionNormalise);
     }
 
     void FixedUpdate()
